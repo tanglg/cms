@@ -12,6 +12,10 @@ _Avoid_: Visit,拜访 when used to mean all contact types
 A sales member's plan to contact one of their customers on a specific date.
 _Avoid_: Scheduled visit, task when referring to customer contact planning
 
+**Sales Member Activity Calendar**:
+The date-organized view of a **Sales Member**'s **Planned Contacts** and **Customer Contacts**, used to determine today's planned customers, registered plans, unregistered plans, and plan execution counts.
+_Avoid_: Task list, schedule when referring to planned/contact registration rules
+
 **Registered Planned Contact**:
 A **Planned Contact** for which the sales member has submitted a **Customer Contact** on the planned date.
 _Avoid_: Completed task when completion means anything other than submitted contact record
@@ -60,6 +64,10 @@ _Avoid_: Display name, nickname
 The system-recorded time at which a **Customer Contact** is submitted.
 _Avoid_: Editable visit time
 
+**Business Date**:
+The Asia/Shanghai natural date used by the system when comparing **Planned Contacts** with **Customer Contacts**, showing today's activity, and calculating recent-contact windows.
+_Avoid_: Server date, browser date, UTC date when applying contact planning rules
+
 **Communication Summary**:
 A free-text summary of the contact method, contacted person, communication content, and conclusion for a **Customer Contact**.
 _Avoid_: Notes, remarks
@@ -100,6 +108,9 @@ _Avoid_: Username
 - A **Customer Contact** has exactly one **Contact Time**
 - A **Customer Contact** has exactly one **Communication Summary**
 - A **Contact Method** is captured in the **Communication Summary**
+- A **Business Date** is derived from **Contact Time** using Asia/Shanghai
+- A **Sales Member Activity Calendar** is organized by **Sales Member** and date
+- A **Sales Member Activity Calendar** includes **Planned Contacts** and **Customer Contacts**
 - A **Planned Contact** belongs to exactly one **Prospective Customer** or **Formal Customer**
 - A **Planned Contact** is created by exactly one **Sales Member**
 - A **Planned Contact** has exactly one planned date
