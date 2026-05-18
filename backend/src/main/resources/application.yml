@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: cms-backend
+  datasource:
+    url: jdbc:sqlite:./data/cms.sqlite
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  sql:
+    init:
+      mode: never
+
+cms:
+  seed-admin:
+    name: 系统管理者
+    phone: "13800000000"
+    password: admin123456
